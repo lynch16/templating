@@ -1,0 +1,16 @@
+<% importer.addImport("react", "* as React"); %>
+<% importer.addImport("oui-react", ["Form"]); %>
+
+const <%= name %>: React.FC = () => {
+  return (
+    <div>
+      <Form>
+        <% fields.forEach(field => { -%>
+        <div>
+          <%= field %>
+        </div>
+        <%_ }) -%>
+      </Form>
+    </div>
+  );
+};

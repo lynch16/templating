@@ -1,0 +1,9 @@
+node_modules
+components
+build
+
+yarn-error.log
+swagger.json
+
+.vscode
+.DS_Store
